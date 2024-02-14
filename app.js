@@ -30,7 +30,7 @@ app.post("/login", (req, res)=>{
     }
 
     if (req.body.login === user.login && req.body.password === user.password) {
-        res.status(402).send({message: "Успешная авторизация"})
+        res.send({message: "Успешная авторизация"})
     }
 })
 
